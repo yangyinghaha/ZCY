@@ -17,9 +17,14 @@ import cn.amber.zxs.zcy.R;
 public class HomeFragment extends BaseFragment {
 
     public static final String TAG="HomeFragment";
+
+
+
     public static HomeFragment newInstance() {
+
         HomeFragment fragment = new HomeFragment();
         return fragment;
+
     }
 
     public HomeFragment() {
@@ -33,15 +38,13 @@ public class HomeFragment extends BaseFragment {
                 .addToBackStack(null)
                 .commitAllowingStateLoss();
 
-
-
-        
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+
     }
 
     @Override
@@ -49,11 +52,13 @@ public class HomeFragment extends BaseFragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
+
     }
 
     @Override
     public void onResume() {
         super.onResume();
         setTitle("首页");
+
     }
 }
