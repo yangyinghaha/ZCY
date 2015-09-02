@@ -33,6 +33,9 @@ public class HomeFragment extends BaseFragment {
                 .addToBackStack(null)
                 .commitAllowingStateLoss();
 
+
+
+        
     }
 
     @Override
