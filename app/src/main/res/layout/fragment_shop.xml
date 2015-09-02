@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="cn.amber.zxs.zcy.fragment.ShopFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_shops"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+   <LinearLayout
+       android:layout_width="0dp"
+       android:layout_weight="0.7"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.07"
+           android:paddingBottom="1dp">
+           <CheckBox
+               android:id="@+id/cb_all_check"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               />
+       </RelativeLayout>
+
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/rv_goods"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.93">
+
+       </android.support.v7.widget.RecyclerView>
+
+
+   </LinearLayout>
+
+</LinearLayout>

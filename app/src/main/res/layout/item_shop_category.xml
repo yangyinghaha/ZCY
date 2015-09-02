@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="0.5dp"
+    android:background="@color/layout_bg_gray"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/cb_shops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="商铺"/>
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cb_shops"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/goods_search_item_up_chosen"
+        android:visibility="gone"
+        />
+    <RadioGroup
+        android:id="@+id/rg_second_category"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/cb_shops"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="widown_bg">#eeeeee</color>
+    <color name="color_app_bar">#1e90ff</color>
+    <color name="widown_bg_alpha">#66000000</color>
+
+
+    <color name="color_primary_dark">#0080ff</color>
+    <color name="color_primary_hint">#99ffffff</color>
+    <color name="color_bg_alpha">#00000000</color>
+
+    <!--rocioshi write-->
+    <color name="actionbar_black">#4a4a4a</color>
+    <color name="title_1_black">#171717</color>
+    <color name="title_3_black">#ffffff</color>
+    <color name="title_2_black">#404040</color>
+    <color name="title_gray">#7c7c7c</color>
+    <color name="content_price_blue">#387fe2</color>
+    <color name="content_price_blue_pressed">#499EE0</color>
+    <color name="content_green">#239971</color>
+    <color name="content_green_pressed">#719878</color>
+    <color name="navi_normal">#798497</color>
+    <color name="navi_slected">#387fe2</color>
+
+    <color name="tab_background">#ffffff</color>
+    <color name="bottom_background">#f4f4f4</color>
+    <color name="layout_bg">#eeeeee</color>
+    <color name="layout_bg_gray">#E3E3E3</color>
+    <color name="layout_light_bg_gray">#F5F5F5</color>
+
+    <!--wangzhonghua write-->
+    <color name="bb_transparent_white_background">#bbffffff</color>
+    <color name="whole_transparent_white_background">#00ffffff</color>
+
+    <!-- 字体颜色 -->
+    <color name="tab_gray">#fafafa</color>
+    <color name="item_navi_">#80435D81</color>
+    <color name="item_navi_o">#8049668F</color>
+
+    <color name="deep_gray">#575757</color>
+    <color name="deep_red">#cc0000</color>
+    <color name="light_red">#aa0000</color>
+    <color name="category_bg">#efeeed</color>
+    <color name="dialog_title">#24ACDC</color>
+
+    <color name="tv_person_gray1">#666666</color>
+    <color name="tv_person_gray4">#cccccc</color>
+    <color name="tv_person_gray2">#999999</color>
+    <color name="tv_person_gray3">#333333</color>
+    <color name="tv_person_gray5">#4d4d4d</color>
+    <color name="red">#df3734</color>
+    <color name="gray">#ADADAD</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_alpha">#7fffffff</color>
+    <color name="rg_backgroud_blue">#7fffffff</color>
+    <color name="gray_white">#e5e5e5</color>
+    <color name="gray_little_white">#f0f0f0</color>
+    <color name="orange">#ff6a28</color>
+    <color name="relative_orange">#ff23b0ea</color>
+    <color name="tv_line_common">#e0e0e0</color>
+    <color name="masking">#88ffffff</color>
+</resources>
