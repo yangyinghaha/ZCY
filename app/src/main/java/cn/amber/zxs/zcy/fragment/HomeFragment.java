@@ -25,6 +25,8 @@ public class HomeFragment extends BaseFragment {
         HomeFragment fragment = new HomeFragment();
         return fragment;
 
+
+        
     }
 
     public HomeFragment() {
