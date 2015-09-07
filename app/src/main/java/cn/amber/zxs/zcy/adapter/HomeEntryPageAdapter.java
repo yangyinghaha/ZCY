@@ -65,7 +65,7 @@ public class HomeEntryPageAdapter extends BaseAdapter {
         viewHolder.mTvEntry.setLayoutParams(params);
         viewHolder.mTvEntry.setText(mEntrys.get(position));
         if (onItemClickListener!=null){
-            
+
             viewHolder.mTvEntry.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
