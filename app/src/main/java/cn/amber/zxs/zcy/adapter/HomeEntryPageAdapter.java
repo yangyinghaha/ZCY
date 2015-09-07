@@ -1,6 +1,9 @@
 package cn.amber.zxs.zcy.adapter;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -69,17 +72,30 @@ public class HomeEntryPageAdapter extends BaseAdapter {
             viewHolder.mTvEntry.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    onItemClickListener.onItemClick(v,position);
+                    onItemClickListener.onItemClick(v, position);
                 }
             });
 
-            viewHolder.mTvEntry.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View v) {
-                    return false;
-                }
-            });
         }
+        final ViewHolder finalViewHolder = viewHolder;
+        viewHolder.mTvEntry.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                if (finalViewHolder.mTvEntry.getText()!="十"){
+                    AlertDialog dialog=new AlertDialog.Builder(mContext)
+                            .setMessage("确认删除选项？")
+                            .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+
+                                }
+                            })
+                            .setNegativeButton("取消",null)
+                            .show();
+                }
+                return true;
+            }
+        });
         return convertView;
     }
 
