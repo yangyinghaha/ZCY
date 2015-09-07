@@ -1,6 +1,7 @@
 package cn.amber.zxs.zcy;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,7 +9,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
-
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import cn.amber.zxs.zcy.fragment.FindFragment;
@@ -88,8 +88,21 @@ public class MainActivity extends BaseActivity {
     //退出
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        doExit();
+        Fragment homeFragment=getSupportFragmentManager().findFragmentByTag("HomeFragment");
+        Fragment shopFragment=getSupportFragmentManager().findFragmentByTag("ShopFragment");
+        Fragment findFragment=getSupportFragmentManager().findFragmentByTag("FindFragment");
+        Fragment personment=getSupportFragmentManager().findFragmentByTag("PersonFragment");
+        if (homeFragment!=null&&homeFragment.isVisible()){
+            doExit();
+        }else if (shopFragment!=null&&shopFragment.isVisible()){
+            doExit();
+        }else if (findFragment!=null&&findFragment.isVisible()){
+            doExit();
+        }else if (personment!=null&&personment.isVisible()){
+            doExit();
+        }else {
+            super.onBackPressed();
+        }
     }
 
     public void doExit(){

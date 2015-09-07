@@ -16,7 +16,7 @@ import cn.amber.zxs.zcy.R;
  */
 public class PersonFragment extends BaseFragment {
 
-
+    public static final String TAG="PersonFragment";
     public static PersonFragment newInstance() {
         PersonFragment fragment = new PersonFragment();
         return fragment;
@@ -26,7 +26,7 @@ public class PersonFragment extends BaseFragment {
         Fragment fragment = PersonFragment.newInstance();
         FragmentManager manager = appCompatActivity.getSupportFragmentManager();
         manager.beginTransaction()
-                .replace(R.id.rl_container, fragment, null)
+                .replace(R.id.rl_container, fragment, PersonFragment.TAG)
                 .addToBackStack(null)
                 .commit();
 
@@ -46,6 +46,6 @@ public class PersonFragment extends BaseFragment {
     @Override
     public void onResume() {
         super.onResume();
-        setTitle("我的");
+        setTitle(getString(R.string.text_person));
     }
 }

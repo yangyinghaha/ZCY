@@ -16,7 +16,7 @@ import cn.amber.zxs.zcy.R;
  */
 public class FindFragment extends BaseFragment {
 
-
+    public static final String TAG="FindFragment";
 
     public static FindFragment newInstance() {
         FindFragment fragment = new FindFragment();
@@ -27,7 +27,7 @@ public class FindFragment extends BaseFragment {
         Fragment fragment = FindFragment.newInstance();
         FragmentManager manager = appCompatActivity.getSupportFragmentManager();
         manager.beginTransaction()
-                .replace(R.id.rl_container, fragment, null)
+                .replace(R.id.rl_container, fragment, FindFragment.TAG)
                 .addToBackStack(null)
                 .commit();
 
@@ -47,6 +47,6 @@ public class FindFragment extends BaseFragment {
     @Override
     public void onResume() {
         super.onResume();
-        setTitle("发现");
+        setTitle(getString(R.string.text_find));
     }
 }

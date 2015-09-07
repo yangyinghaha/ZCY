@@ -28,7 +28,7 @@
             android:gravity="center"
             android:layout_weight="0.25"
             android:padding="5dp"
-            android:text="首页"/>
+            android:text="@string/text_home"/>
         <RadioButton
             style="@style/NaviBottom"
             android:id="@+id/rb_shop"
@@ -38,7 +38,7 @@
             android:gravity="center"
             android:layout_weight="0.25"
             android:padding="5dp"
-            android:text="店铺"/>
+            android:text="@string/text_shop"/>
         <RadioButton
             style="@style/NaviBottom"
             android:id="@+id/rb_find"
@@ -48,7 +48,7 @@
             android:gravity="center"
             android:layout_weight="0.25"
             android:padding="5dp"
-            android:text="发现"/>
+            android:text="@string/text_find"/>
         <RadioButton
             style="@style/NaviBottom"
             android:id="@+id/rb_person"
@@ -58,7 +58,7 @@
             android:gravity="center"
             android:layout_weight="0.25"
             android:padding="5dp"
-            android:text="我的"/>
+            android:text="@string/text_person"/>
 
     </RadioGroup>
 
